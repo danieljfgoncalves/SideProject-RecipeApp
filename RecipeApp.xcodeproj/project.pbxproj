@@ -14,6 +14,7 @@
 		E444A56F1AE6DBA900C41EBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E444A56E1AE6DBA900C41EBD /* Images.xcassets */; };
 		E444A5721AE6DBA900C41EBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E444A5701AE6DBA900C41EBD /* LaunchScreen.xib */; };
 		E444A57E1AE6DBA900C41EBD /* RecipeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A57D1AE6DBA900C41EBD /* RecipeAppTests.m */; };
+		E444A58A1AE6DBD900C41EBD /* RecipeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A5891AE6DBD900C41EBD /* RecipeTableVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		E444A5631AE6DBA900C41EBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E444A5651AE6DBA900C41EBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E444A5661AE6DBA900C41EBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E444A5681AE6DBA900C41EBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E444A5691AE6DBA900C41EBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E444A5681AE6DBA900C41EBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RecipeApp/ViewController.h; sourceTree = "<group>"; };
+		E444A5691AE6DBA900C41EBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = RecipeApp/ViewController.m; sourceTree = "<group>"; };
 		E444A56C1AE6DBA900C41EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E444A56E1AE6DBA900C41EBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E444A5711AE6DBA900C41EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E444A5771AE6DBA900C41EBD /* RecipeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E444A57C1AE6DBA900C41EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E444A57D1AE6DBA900C41EBD /* RecipeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeAppTests.m; sourceTree = "<group>"; };
+		E444A5881AE6DBD900C41EBD /* RecipeTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableVC.h; sourceTree = "<group>"; };
+		E444A5891AE6DBD900C41EBD /* RecipeTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		E444A5551AE6DBA900C41EBD = {
 			isa = PBXGroup;
 			children = (
+				E444A5871AE6DBB000C41EBD /* Controller */,
 				E444A5601AE6DBA900C41EBD /* RecipeApp */,
 				E444A57A1AE6DBA900C41EBD /* RecipeAppTests */,
 				E444A55F1AE6DBA900C41EBD /* Products */,
@@ -83,8 +87,6 @@
 			children = (
 				E444A5651AE6DBA900C41EBD /* AppDelegate.h */,
 				E444A5661AE6DBA900C41EBD /* AppDelegate.m */,
-				E444A5681AE6DBA900C41EBD /* ViewController.h */,
-				E444A5691AE6DBA900C41EBD /* ViewController.m */,
 				E444A56B1AE6DBA900C41EBD /* Main.storyboard */,
 				E444A56E1AE6DBA900C41EBD /* Images.xcassets */,
 				E444A5701AE6DBA900C41EBD /* LaunchScreen.xib */,
@@ -117,6 +119,17 @@
 				E444A57C1AE6DBA900C41EBD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E444A5871AE6DBB000C41EBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E444A5681AE6DBA900C41EBD /* ViewController.h */,
+				E444A5691AE6DBA900C41EBD /* ViewController.m */,
+				E444A5881AE6DBD900C41EBD /* RecipeTableVC.h */,
+				E444A5891AE6DBD900C41EBD /* RecipeTableVC.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				E444A56A1AE6DBA900C41EBD /* ViewController.m in Sources */,
 				E444A5671AE6DBA900C41EBD /* AppDelegate.m in Sources */,
 				E444A5641AE6DBA900C41EBD /* main.m in Sources */,
+				E444A58A1AE6DBD900C41EBD /* RecipeTableVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
