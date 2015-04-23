@@ -10,4 +10,6 @@
 
 @interface RecipeTableVC : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *listOfRecipes;
+
 @end

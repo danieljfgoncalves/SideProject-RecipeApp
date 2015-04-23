@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		E444A5641AE6DBA900C41EBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A5631AE6DBA900C41EBD /* main.m */; };
 		E444A5671AE6DBA900C41EBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A5661AE6DBA900C41EBD /* AppDelegate.m */; };
-		E444A56A1AE6DBA900C41EBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A5691AE6DBA900C41EBD /* ViewController.m */; };
-		E444A56D1AE6DBA900C41EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E444A56B1AE6DBA900C41EBD /* Main.storyboard */; };
 		E444A56F1AE6DBA900C41EBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E444A56E1AE6DBA900C41EBD /* Images.xcassets */; };
 		E444A5721AE6DBA900C41EBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E444A5701AE6DBA900C41EBD /* LaunchScreen.xib */; };
 		E444A57E1AE6DBA900C41EBD /* RecipeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A57D1AE6DBA900C41EBD /* RecipeAppTests.m */; };
 		E444A58A1AE6DBD900C41EBD /* RecipeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A5891AE6DBD900C41EBD /* RecipeTableVC.m */; };
+		E444A58E1AE7F9A000C41EBD /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A58D1AE7F9A000C41EBD /* Recipe.m */; };
+		E444A5901AE7FA8A00C41EBD /* recipe.plist in Resources */ = {isa = PBXBuildFile; fileRef = E444A58F1AE7FA8A00C41EBD /* recipe.plist */; };
+		E444A5941AE8316600C41EBD /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A5931AE8316600C41EBD /* CustomTableViewCell.m */; };
+		E444A5981AE848D300C41EBD /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E444A5971AE848D300C41EBD /* Lato-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +35,6 @@
 		E444A5631AE6DBA900C41EBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E444A5651AE6DBA900C41EBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E444A5661AE6DBA900C41EBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E444A5681AE6DBA900C41EBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = RecipeApp/ViewController.h; sourceTree = "<group>"; };
-		E444A5691AE6DBA900C41EBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = RecipeApp/ViewController.m; sourceTree = "<group>"; };
-		E444A56C1AE6DBA900C41EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E444A56E1AE6DBA900C41EBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E444A5711AE6DBA900C41EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E444A5771AE6DBA900C41EBD /* RecipeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +42,12 @@
 		E444A57D1AE6DBA900C41EBD /* RecipeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeAppTests.m; sourceTree = "<group>"; };
 		E444A5881AE6DBD900C41EBD /* RecipeTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableVC.h; sourceTree = "<group>"; };
 		E444A5891AE6DBD900C41EBD /* RecipeTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableVC.m; sourceTree = "<group>"; };
+		E444A58C1AE7F9A000C41EBD /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		E444A58D1AE7F9A000C41EBD /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		E444A58F1AE7FA8A00C41EBD /* recipe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipe.plist; sourceTree = "<group>"; };
+		E444A5921AE8316600C41EBD /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		E444A5931AE8316600C41EBD /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		E444A5971AE848D300C41EBD /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../Lato-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,8 @@
 		E444A5551AE6DBA900C41EBD = {
 			isa = PBXGroup;
 			children = (
+				E444A58B1AE7F98C00C41EBD /* Model */,
+				E444A5911AE8314600C41EBD /* View */,
 				E444A5871AE6DBB000C41EBD /* Controller */,
 				E444A5601AE6DBA900C41EBD /* RecipeApp */,
 				E444A57A1AE6DBA900C41EBD /* RecipeAppTests */,
@@ -87,9 +94,9 @@
 			children = (
 				E444A5651AE6DBA900C41EBD /* AppDelegate.h */,
 				E444A5661AE6DBA900C41EBD /* AppDelegate.m */,
-				E444A56B1AE6DBA900C41EBD /* Main.storyboard */,
 				E444A56E1AE6DBA900C41EBD /* Images.xcassets */,
 				E444A5701AE6DBA900C41EBD /* LaunchScreen.xib */,
+				E444A5971AE848D300C41EBD /* Lato-Thin.ttf */,
 				E444A5611AE6DBA900C41EBD /* Supporting Files */,
 			);
 			path = RecipeApp;
@@ -124,12 +131,29 @@
 		E444A5871AE6DBB000C41EBD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E444A5681AE6DBA900C41EBD /* ViewController.h */,
-				E444A5691AE6DBA900C41EBD /* ViewController.m */,
 				E444A5881AE6DBD900C41EBD /* RecipeTableVC.h */,
 				E444A5891AE6DBD900C41EBD /* RecipeTableVC.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		E444A58B1AE7F98C00C41EBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E444A58C1AE7F9A000C41EBD /* Recipe.h */,
+				E444A58D1AE7F9A000C41EBD /* Recipe.m */,
+				E444A58F1AE7FA8A00C41EBD /* recipe.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E444A5911AE8314600C41EBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E444A5921AE8316600C41EBD /* CustomTableViewCell.h */,
+				E444A5931AE8316600C41EBD /* CustomTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E444A56D1AE6DBA900C41EBD /* Main.storyboard in Resources */,
+				E444A5981AE848D300C41EBD /* Lato-Thin.ttf in Resources */,
 				E444A5721AE6DBA900C41EBD /* LaunchScreen.xib in Resources */,
+				E444A5901AE7FA8A00C41EBD /* recipe.plist in Resources */,
 				E444A56F1AE6DBA900C41EBD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E444A56A1AE6DBA900C41EBD /* ViewController.m in Sources */,
+				E444A58E1AE7F9A000C41EBD /* Recipe.m in Sources */,
+				E444A5941AE8316600C41EBD /* CustomTableViewCell.m in Sources */,
 				E444A5671AE6DBA900C41EBD /* AppDelegate.m in Sources */,
 				E444A5641AE6DBA900C41EBD /* main.m in Sources */,
 				E444A58A1AE6DBD900C41EBD /* RecipeTableVC.m in Sources */,
@@ -258,14 +284,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E444A56B1AE6DBA900C41EBD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E444A56C1AE6DBA900C41EBD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E444A5701AE6DBA900C41EBD /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RecipeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RecipeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
