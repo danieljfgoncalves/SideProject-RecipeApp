@@ -46,10 +46,12 @@
         
         // Set Constrains
             // Vertical Constrains
-        NSArray *constraintsLabelName = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_labelName]-20-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_labelName)];
-        [self addConstraints:constraintsLabelName];
-        NSArray *constraintsLabelPrepTime = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_labelPrepTime]-5-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_labelPrepTime)];
-        [self addConstraints:constraintsLabelPrepTime];
+        NSArray *constraintsLabels = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_labelName][_labelPrepTime]-5-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_labelName, _labelPrepTime)];
+        [self addConstraints:constraintsLabels];
+//        NSArray *constraintsLabelName = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_labelName]-20-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_labelName)];
+//        [self addConstraints:constraintsLabelName];
+//        NSArray *constraintsLabelPrepTime = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_labelPrepTime]-5-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_labelPrepTime)];
+//        [self addConstraints:constraintsLabelPrepTime];
         
             // Horizontal Constrains
         UIView *spacer1 = [UIView new];
