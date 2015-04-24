@@ -19,11 +19,12 @@
     // Override point for customization after application launch.
     
     // initiate the RecipeTableVC
-    RecipeTableVC *myRecipeTableVC = [[RecipeTableVC alloc]initWithStyle:UITableViewStylePlain];
+    RecipeTableVC *recipeTableVC = [[RecipeTableVC alloc]initWithStyle:UITableViewStylePlain];
+    UINavigationController *recipeNav = [[UINavigationController alloc]initWithRootViewController:recipeTableVC];
 
     // Set Window
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    self.window.rootViewController = myRecipeTableVC;
+    self.window.rootViewController = recipeNav;
     [self.window makeKeyAndVisible];
     
     return YES;
