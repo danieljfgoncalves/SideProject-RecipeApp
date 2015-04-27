@@ -9,6 +9,7 @@
 #import "RecipeTableVC.h"
 #import "Recipe.h"
 #import "CustomTableViewCell.h"
+#import "DetailViewController.h"
 
 
 @interface RecipeTableVC ()
@@ -44,11 +45,11 @@
     self.listOfRecipes = [[NSMutableArray alloc] init];
     for (int i = 0; i < recipeName.count; i++)
     {
-        Recipe *rep = [[Recipe alloc] init];
-        rep.recipeName = recipeName[i];
-        rep.recipeImage = recipeImage[i];
-        rep.prepTime = prepTime[i];
-        [self.listOfRecipes addObject:rep];
+        Recipe *recipe = [[Recipe alloc] init];
+        recipe.recipeName = recipeName[i];
+        recipe.recipeImage = recipeImage[i];
+        recipe.prepTime = prepTime[i];
+        [self.listOfRecipes addObject:recipe];
     }
     
     // Uncomment the following line to preserve selection between presentations.
@@ -105,7 +106,20 @@
     return self.tableView.frame.size.height/4.0f;
 }
 
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    Recipe *recipe = self.listOfRecipes[indexPath.row];
+    DetailViewController *detailVCInstance = [[DetailViewController alloc]init];
+    
+    // Connect VCs
+    detailVCInstance.recipeName = recipe.recipeName;
+    detailVCInstance.recipePrepTime = recipe.prepTime;
+    detailVCInstance.recipeImage = recipe.recipeImage;
+    // Push viewController
+    [self.navigationController pushViewController:detailVCInstance animated:YES];
+
+    
+    
     
 }
 

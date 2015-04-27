@@ -17,6 +17,7 @@
 		E444A5901AE7FA8A00C41EBD /* recipe.plist in Resources */ = {isa = PBXBuildFile; fileRef = E444A58F1AE7FA8A00C41EBD /* recipe.plist */; };
 		E444A5941AE8316600C41EBD /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E444A5931AE8316600C41EBD /* CustomTableViewCell.m */; };
 		E444A5981AE848D300C41EBD /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E444A5971AE848D300C41EBD /* Lato-Thin.ttf */; };
+		E4AEFD271AEEAD73007BEF68 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AEFD261AEEAD73007BEF68 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		E444A5921AE8316600C41EBD /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		E444A5931AE8316600C41EBD /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		E444A5971AE848D300C41EBD /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../Lato-Thin.ttf"; sourceTree = "<group>"; };
+		E4AEFD251AEEAD73007BEF68 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E4AEFD261AEEAD73007BEF68 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 			children = (
 				E444A5881AE6DBD900C41EBD /* RecipeTableVC.h */,
 				E444A5891AE6DBD900C41EBD /* RecipeTableVC.m */,
+				E4AEFD251AEEAD73007BEF68 /* DetailViewController.h */,
+				E4AEFD261AEEAD73007BEF68 /* DetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				E444A5671AE6DBA900C41EBD /* AppDelegate.m in Sources */,
 				E444A5641AE6DBA900C41EBD /* main.m in Sources */,
 				E444A58A1AE6DBD900C41EBD /* RecipeTableVC.m in Sources */,
+				E4AEFD271AEEAD73007BEF68 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +456,7 @@
 				E444A5831AE6DBA900C41EBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E444A5841AE6DBA900C41EBD /* Build configuration list for PBXNativeTarget "RecipeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +465,7 @@
 				E444A5861AE6DBA900C41EBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

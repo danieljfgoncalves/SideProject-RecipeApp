@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RecipeTableVC.h"
+#import "DetailViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,9 @@
     // initiate the RecipeTableVC
     RecipeTableVC *recipeTableVC = [[RecipeTableVC alloc]initWithStyle:UITableViewStylePlain];
     UINavigationController *recipeNav = [[UINavigationController alloc]initWithRootViewController:recipeTableVC];
+    
+//    DetailViewController *detailVC = [[DetailViewController alloc]init];
+//    UINavigationController *detailNav = [[UINavigationController alloc]initWithRootViewController:detailVC];
 
     // Set Window
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
