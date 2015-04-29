@@ -14,14 +14,20 @@
 
 @implementation DetailViewController
 
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = self.recipeName;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view = [[UIView alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    NSLog(@"%f", self.navigationController.navigationBar.frame.size.height);
-    
+
     // Set Image
     self.recipeImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0.00f, 44.00f, self.view.frame.size.width, 200.0f)];
     [self.view addSubview:self.recipeImageView];
